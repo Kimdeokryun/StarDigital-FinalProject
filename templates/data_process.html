@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>김덕륜 심화프로젝트</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">세종시 흡연 구역 위치</h1>
+        <div class="table-responsive"> <!-- Add responsive class for better mobile display -->
+            <table class="table table-bordered table-striped"> <!-- Apply Bootstrap table classes -->
+                <thead class="thead-dark"> <!-- Apply dark header color -->
+                    <tr>
+                        <th>도로명주소</th>
+                        <th>관리기관명칭</th>
+                        <th>위도</th>
+                        <th>경도</th>
+                        <th>주소길이 15이상</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for index, row in df.iterrows() %}
+                    <tr>
+                        <td>{{ row['도로명주소'] }}</td>
+                        <td>{{ row['관리기관명칭'] }}</td>
+                        <td>{{ row['위도'] }}</td>
+                        <td>{{ row['경도'] }}</td>
+                        <td>{{ row['주소길이 15이상'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        </div>
+        <br><br>
+        <h3 class="mb-4">동쪽에 가까운 순서로 정렬</h3>
+        <div class="table-responsive"> <!-- Add responsive class for better mobile display -->
+            <table class="table table-bordered table-striped"> <!-- Apply Bootstrap table classes -->
+                <thead class="thead-dark"> <!-- Apply dark header color -->
+                    <tr>
+                        <th>도로명주소</th>
+                        <th>관리기관명칭</th>
+                        <th>위도</th>
+                        <th>경도</th>
+                        <th>주소길이 15이상</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for index, row in df2.iterrows() %}
+                    <tr>
+                        <td>{{ row['도로명주소'] }}</td>
+                        <td>{{ row['관리기관명칭'] }}</td>
+                        <td>{{ row['위도'] }}</td>
+                        <td>{{ row['경도'] }}</td>
+                        <td>{{ row['주소길이 15이상'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        </div>
+        <form action="/data_download" method="POST">
+            <button type="submit" class="btn btn-primary">CSV 파일 다운로드</button>
+        </form>
+    </div>
+    {% endblock %}
+</body>
+</html>

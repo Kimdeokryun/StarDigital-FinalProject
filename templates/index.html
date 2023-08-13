@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>김덕륜 심화프로젝트</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 네비게이션 링크의 활성 상태에 대한 스타일 */
+        .navbar .nav-item.active .nav-link {
+            font-weight: bold;
+        }
+
+        /* 전체 폰트 설정 */
+        body {
+            font-family: "HallymGothic-Regular", sans-serif;
+        }
+
+        .custom-margin {
+            margin-right: 2rem;
+            /* 원하는 크기로 조정 */
+        }
+    </style>
+
+    <!-- 로컬 폰트 설정 -->
+    <style>
+        @font-face {
+            font-family: "HallymGothic-Regular";
+            src: url("{{ url_for('static', filename='fonts/HallymGothic-Regular.ttf') }}") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "HallymGothic-Medium";
+            src: url("{{ url_for('static', filename='fonts/HallymGothic-Medium.ttf') }}") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">심화프로젝트</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item custom-margin">
+                    <a class="nav-link" href="/" id="home">홈</a>
+                </li>
+                <li class="nav-item custom-margin">
+                    <a class="nav-link" href="/data_request" id="func2">세종시 흡연 구역 위치</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/file_upload" id="func2">AI로 자동차 번호판 인식하기</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                {% if session.user_id %}
+                    <li><a class="nav-link">환영합니다 {{ session.user_id }}님</a></li>
+                    <li><a class="nav-link" href="/logout">로그아웃</a></li>
+                {% else %}
+                    <li class="nav-item"><a class="nav-link" href="/auth" id="login">로그인/회원가입</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

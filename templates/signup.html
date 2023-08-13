@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>김덕륜 심화프로젝트 - 회원가입</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block content %}
+    <div class="container mt-5">
+        <h2>회원가입</h2>
+        {% if error %}
+        <script>
+            alert("회원가입에 실패했습니다. 중복된 아이디입니다.");
+        </script>
+        {% endif %}
+        <form action="/signup" method="POST">
+            <input type="text" name="username" class="form-control mb-2" placeholder="사용자명">
+            <input type="password" name="password" class="form-control mb-2" placeholder="비밀번호">
+            <button type="submit" class="btn btn-success">회원가입</button>
+        </form>
+    </div>
+    {% endblock %}
+</body>
+</html>

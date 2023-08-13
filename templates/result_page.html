@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container mt-5 d-flex align-items-center justify-content-center vh-100">
+    <div class="text-center">
+        <h2>차량 번호판 인식 결과</h2>
+        {% if json_data.image_path %}
+        <img src="" alt="Uploaded Image" class="img-fluid" id="uploaded-image">
+        <p class="result-text">인식 결과: <strong id="detect-result">{{ json_data.detect_result }}</strong></p>
+        {% else %}
+        <p>No image and data available.</p>
+        {% endif %}
+    </div>
+</div>
+<style>
+    .result-text {
+    font-size: 30px; /* 조절 원하는 크기로 변경 */
+    text-align: center;
+    margin-top: 20px;
+}
+    </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        const imgElement = document.getElementById('uploaded-image');
+        const resultElement = document.getElementById('detect-result');
+    
+        const response = await fetch('/get_image', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ image_path: '{{ json_data.image_path }}' })
+        });
+    
+        if (response.ok) {
+            const blob = await response.blob();
+            const imageUrl = URL.createObjectURL(blob);
+            imgElement.src = imageUrl;
+    
+            resultElement.textContent = '{{ json_data.detect_result }}';
+        }
+    });
+    </script>
+{% endblock %}

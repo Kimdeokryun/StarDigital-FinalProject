@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>김덕륜 심화프로젝트</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 네비게이션 링크의 활성 상태에 대한 스타일 */
+        .navbar .nav-item.active .nav-link {
+            font-weight: bold;
+        }
+
+        /* 전체 폰트 설정 */
+        body {
+            font-family: "HallymGothic-Regular", sans-serif;
+        }
+
+        .custom-margin {
+            margin-right: 2rem;
+            /* 원하는 크기로 조정 */
+        }
+    </style>
+
+    <!-- 로컬 폰트 설정 -->
+    <style>
+        @font-face {
+            font-family: "HallymGothic-Regular";
+            src: url("{{ url_for('static', filename='fonts/HallymGothic-Regular.ttf') }}") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "HallymGothic-Medium";
+            src: url("{{ url_for('static', filename='fonts/HallymGothic-Medium.ttf') }}") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    {% extends "index.html" %}
+    {% block content %}
+
+    
+    <div class="jumbotron">
+        <h2>프로젝트 소개</h2>
+        <p>이 프로젝트는 2023.07.01 ~ 2023.08.14 까지 진행한</p>
+        <p>천안형 스타 디지털 인재 육성 프로그램의 심화 프로젝트입니다.</p>
+        <p>총 3개의 요구명세서에 따른 결과물을 보여줍니다.</p>
+    </div>
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">필요한 데이터를 수집하여 저장하기</h4>
+                <p class="card-text">[목표]</p>
+                <p class="card-text">- 국가중점데이터를 포함한 원하는 데이터를 API를 통해 가져올 수
+                    있다.</p>
+                <p class="card-text">- 데이터를 요구사항에 맞게 수정/편집할 수 있다.</p>
+                <p class="card-text">- 데이터를 공유하기 위한 csv 파일로 변경이 가능하다.</p>
+                <br>
+                <p class="card-text">requests 라이브러리를 통해 세종특별자치시의 흡연구역 위치 데이터를 수집하여 세종시의 흡연구역은 총 5개인 것을 확인하였습니다 
+                </p>
+                <p class="card-text">pandas 라이브러리를 통해 데이터프레임을 만들었습니다.</p>
+                <p class="card-text">경도값이 클 수록 동쪽에 가깝다는 성질을 이용해 데이터프레임을 '경도' 기준으로 역순 정렬하였습니다.</p>
+                <p class="card-text">해당 데이터프레임은 세종시 흡연 구역 메뉴를 통해 확인 가능합니다.</p>
+                <p class="card-text">추가로 csv 파일 다운 버튼을 통해 csv 파일을 다운받을 수 있습니다.</p>
+                <p class="card-text">코드의 함수화를 통해, 해당 함수를 현재 웹서비스에 사용할 수 있으며, 다른 프로그램과의 연동을 통해 쉽게 재사용이 가능하다는 장점이 있습니다.</p>
+                <p class="card-text">산출물 check_api.py</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">학습한 ML/DL 엔진을 .py로 실행</h4>
+                <p class="card-text">[목표]</p>
+                <p class="card-text">- 학습한 모델을 불러와서 예측하는 .py 파일을 만들 수 있다.</p>
+                <p class="card-text">- `cmd` 창에서 python xxx.py를 실행 시, input()을 통해 입력
+                    값을 넣을 수 있게 만들고 입력값을 입력하면 입력값이 모델을
+                    통과하여 예측값이 `cmd`창에서 출력되도록 만들 수 있다.
+                    </p>
+                <br>
+                <p class="card-text">번호판이 보이는 자동차 이미지를 통해 번호판의 이미지를 크롭하는 실습에서 추가로 기능을 구현했습니다.</p>
+                <p class="card-text">사전 학습된 yolov5를 통해 번호팝을 크롭시켜 이미지를 저장하고</p>
+                <p class="card-text">번호판의 크롭된 이미지를 easyocr 라이브러리를 활용하여 번호판에 적힌 값을 읽어 반환하였습니다.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">학습한 엔진을 .py로 실행</h4>
+                <p class="card-text">[목표]</p>
+                <p class="card-text">- 인공지능 기술을 사용자에게 제공할 수 있다.
+                </p>
+                <p class="card-text">- 간단한 인증 시스템(로그인 / 회원가입)을 만들 수 있다.</p>
+                <p class="card-text">- 백엔드/프론트엔드를 활용할 수 있다.
+                </p>
+                <br>
+                <p class="card-text">flask를 활용하여 요구명세서 1, 2에 해당하는 기능을 서비스화 하여 배포하였습니다.</p>
+                <p class="card-text">간단한 로그인과 회원가입 기능을 구현하였습니다.</p>
+                <p class="card-text">AWS RDS 와 MYSQL을 활용하여 유저 정보를 저장하였습니다.</p>
+                <p class="card-text">session을 활용하여 로그인이 되어있지 않은 사용자는 AI기술을 사용할 수 없도록 구현하였습니다.</p>
+                <p class="card-text">웹페이지 디자인은 부트스트랩을 적극 활용하였습니다.</p>
+            </div>
+        </div>
+        <!-- 다른 기능 카드들도 추가 -->
+    </div>
+    <footer class="text-center py-4">
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">연락처</h5>
+                    <br><br>
+                    <ul class="list-unstyled">
+                        <li>Email: cjscjsejrxoddl@gmail.com</li>
+                        <li>전화번호: 010-0000-0000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 깃허브 정보 -->
+        <div class="alert alert-info text-center" style="background-color: black; margin-top: 2rem;">
+            <p>더 많은 정보를 원하시면 아래 링크를 확인해주세요:</p>
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/Kimdeokryun" target="_blank">
+                GitHub
+            </a>
+        </div>
+    </footer>
+    {% endblock %}
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

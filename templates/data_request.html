@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>김덕륜 심화프로젝트</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">세종시 흡연 구역 위치</h1>
+        {% if error %}
+        <script>
+            alert("데이터를 로드할 수 없습니다.");
+        </script>
+        {% endif %}
+        <form action="/data_process" method="POST">
+            <button type="submit" class="btn btn-primary">데이터 요청하기</button>
+        </form>
+    </div>
+    {% endblock %}
+</body>
+</html>
