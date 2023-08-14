@@ -45,21 +45,25 @@
 
 
 ### 메인 화면
-![1](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/cd2302d4-9c91-4e92-8c37-7442b61a54b2)
+![1](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/8957744f-85bc-4ae3-9ec0-478723e3befc)
+
 
 
 
 
 ### 기능 1 화면 
-![2](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/045845c3-ce3e-4642-9365-5dcddbb43d90)
+![2](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/3b6524af-fa5e-4e0a-852f-fffa86144b4c)
+
 
 
 
 
 ### 기능 2 화면
-![3](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/f3b71397-e646-4c79-89ce-bd18c472f106)
+![3](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/ac1c90d8-7d2c-4bbb-ac8d-72cd3ba34df4)
+![4](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/9926587b-a184-4d9c-b18e-b2300123c1ee)
 
-![4](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/42be81f6-c589-4db6-a3f7-b1231e747bf9)
+
+
 
 
 
@@ -71,7 +75,8 @@
 
 
 ### 기능 3 화면
-![5](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/6e41d8bc-5ecb-4b96-88ce-467453f23e4b)
+![5](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/1e5d0c46-24ef-41b9-ad47-d900b4e2d3a8)
+
 
 
 
