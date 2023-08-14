@@ -43,17 +43,19 @@
 
 
 ### 메인 화면
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/c743fb81-1c58-40b3-909d-38423a533005)
+![1](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/f8b1fa70-11a1-4594-91d1-564a51dc9eca)
+
 
 
 ### 기능 1 화면 
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/bc254f78-259b-463b-aacb-09876c0e3a73)
+![2](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/79c1e737-ae19-4d61-83d8-fba4075abc14)
+
 
 
 ### 기능 2 화면
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/450a6de3-c6e7-4fe3-9c14-06fc20d0d9c2)
+![3](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/7c08f63e-2ac5-4c45-9b73-e0cd534e3384)
+![4](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/c94a8c46-8fc4-4672-819d-a5ff47e4bd82)
 
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/f5389974-f800-4f5a-a32d-877d62be790a)
 
 
 ### 기능 2  AI 기술 향후 확장 가능
@@ -63,11 +65,8 @@
 
 
 ### 기능 3 화면
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/e8b29b59-0b8b-4f1b-a344-403c870e0fed)
+![5](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/d4ddec3b-b27f-45b8-9814-eeb691a2dd47)
 
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/9394ea0f-6279-411f-9b32-4021904ea419)
-
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/45c18e4b-ea00-40b1-93b0-3020d6199544)
 
 
 
