@@ -2,11 +2,11 @@ import pymysql
 
 def db_connect():
     db = pymysql.connect(
-        host='actionlearning.cv24ixr0qpgh.ap-northeast-2.rds.amazonaws.com',
-        user='rlaejrfbs',
-        password='jser0211',
-        database='project',
-        charset='utf8mb4',
+        host='',
+        user='',
+        password='',
+        database='',
+        charset='',
         cursorclass=pymysql.cursors.DictCursor
     )
 

@@ -4,7 +4,7 @@ import requests
 
 def data_processing():
     url = 'http://apis.data.go.kr/5690000/sjSmokingAreaLocation/sj_00001180'
-    params = {'serviceKey': 'BcqzTKihja2ycPvhdHO9RAbmP0y4GpzVfBaFhIEjGkfFX+GRNonk2eKBQi18ynLiW2ypQulJjrsH6G8YJOgVXA==',
+    params = {'serviceKey': '',
               'pageIndex': '1', 'pageUnit': '20', 'dataTy': 'json', 'searchCondition': 'nm', 'searchKeyword': '세종'}
 
     response = requests.get(url, params=params)
