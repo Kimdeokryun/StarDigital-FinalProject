@@ -43,14 +43,18 @@
 
 
 ### 메인 화면
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/89b6baf0-fa7f-4091-9f00-06b32d55b70a)
+![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/c743fb81-1c58-40b3-909d-38423a533005)
+
 
 ### 기능 1 화면 
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/f122c562-3d24-443e-b396-17a937a3822a)
+![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/bc254f78-259b-463b-aacb-09876c0e3a73)
+
 
 ### 기능 2 화면
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/4906872b-a389-4c94-aec6-e095c3f91663)
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/81b59203-e7bd-49f7-b801-54530a378f01)
+![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/450a6de3-c6e7-4fe3-9c14-06fc20d0d9c2)
+
+![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/f5389974-f800-4f5a-a32d-877d62be790a)
+
 
 ### 기능 2  AI 기술 향후 확장 가능
 링크: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=realm&dataSetSn=172
@@ -59,6 +63,12 @@
 
 
 ### 기능 3 화면
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/e3760fb3-9d1d-413a-9a8c-b54f034ef72c)
-![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/bd63a279-4740-4ee4-a1f1-140dc841bf3f)
+![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/e8b29b59-0b8b-4f1b-a344-403c870e0fed)
+
+![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/9394ea0f-6279-411f-9b32-4021904ea419)
+
+![image](https://github.com/Kimdeokryun/StarDigital-FinalProject/assets/96904134/45c18e4b-ea00-40b1-93b0-3020d6199544)
+
+
+
 
